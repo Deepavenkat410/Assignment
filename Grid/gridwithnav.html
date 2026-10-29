@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridwithnav</title>
+    <style>
+      .container{
+       display: grid;
+            grid-template-areas: 
+            "nav header header "
+            "nav article article" 
+            "nav footer footer";
+            grid-template-rows: 100px 200px 100px;
+            grid-template-columns: 1fr 2fr 1fr;
+      }  
+    header{
+        grid-area: header;
+        background-color: lightcoral;
+    }
+    nav{
+        grid-area: nav;
+        background-color: lightgreen;
+
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: lightcyan;
+    }
+    article{
+        grid-area: article;
+        background-color: lightpink;
+    }
+    header,nav,article,footer{
+         display: flex;
+           margin: 10px;
+           justify-content: center;
+           border:1px solid black;
+           font-size: 40px;
+          
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Navbar</nav>
+        <article>Article</article>
+        <footer>Footer</footer>
+
+    </div>
+</body>
+</html>

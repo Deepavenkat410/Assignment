@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridHeader</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header "
+            "nav article article" 
+            "Ads article article" 
+            "footer footer footer";
+            grid-template-rows: 100px 200px 100px;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+    .header{
+        grid-area: header;
+        background-color: bisque;
+    }
+    .nav{
+        grid-area: nav;
+        background-color: aqua;
+    }
+    .Ads{
+        grid-area: Ads;
+        background-color:gold;
+    }
+    .article{
+        grid-area: article;
+        background-color: darkgoldenrod;
+
+    }
+    .footer{
+        grid-area: footer;
+        background-color: blueviolet;
+    }
+    .Ads,header,nav,article,footer{
+         display: flex;
+           margin: 10px;
+           justify-content: center;
+           border:1px solid black;
+           font-size: 40px;
+          
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <header class="header">Header</header>
+         <nav class="nav">Navigation</nav>
+         <article class="article">Article</article>
+         <div class="Ads">Ads</div>
+         <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>
