@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    
+   
+    font-family: Arial, sans-serif,monospace;
+    background-color: #f7f4f8;
+    color: #222;
+overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+     background-color: rgb(128, 29, 96);
+    align-items: center;
+    padding: 18px;
+    gap: 40%;
+}
+header h2 {
+    color: white;
+    transition: color 0.5s ease,
+                transform 0.5s ease;
+}
+
+header h2:hover {
+    color: yellow;
+    transform: translateY(-3px);
+}
+.nav{
+    display: flex;
+    gap: 30px;
+  
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li :hover{
+    transition-property: color;
+    color: yellow;
+    text-decoration: underline;
+}
+nav li{
+    list-style-type: none;
+}
+.section1{
+    text-align: center;
+    padding: 50px;
+      background-color: rgb(240, 233, 238);
+ 
+}
+.section1:hover{
+    transition-property: background-color;
+  
+     background-color:rgb(234, 216, 230);
+}
+.section1 h2 {
+    display: inline-block;
+    transition: color 0.5s ease,
+                transform 0.5s ease;
+}
+
+.section1 h2:hover {
+    color: rgb(75, 16, 62);
+    transform: scale(1.1);
+}
+
+
+
+.button {
+    padding: 13px;
+    border: none;
+    background-color: rgb(75, 16, 62);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.5s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color:rgb(126, 49, 109);
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgb(104, 54, 104);
+}
+.section2{
+    text-align: center;
+      padding: 25px;
+  
+  
+}
+.article{
+   color: rgb(75, 16, 62);
+}
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.cour {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    width: 150px;
+    height: 60px;
+
+    transition: background-color 0.5s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.cour h3{
+    color:rgb(126, 49, 109) ;
+}
+
+.cour:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 5px 15px grey;
+    background-color:rgb(240, 233, 238);
+}
+.cour h3{
+    padding-bottom: 20px;
+}
+.footer {
+    text-align: center;
+    background-color: rgb(128, 29, 96);
+    padding: 20px;
+ 
+}
+
+.footer div{
+    color: white;
+    transition: transform 0.3s ease,
+                color 0.3s ease;
+}
+
+
+
+.footer:hover div {
+ 
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
