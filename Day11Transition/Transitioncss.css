@@ -5,17 +5,15 @@
 }
 
 body{
-    
-   
     font-family: Arial, sans-serif,monospace;
     background-color: #f7f4f8;
     color: #222;
-overflow: hidden;
+    overflow: hidden;
 }
 .header{
     display: flex;
     justify-content: space-around;
-     background-color: rgb(128, 29, 96);
+    background-color: rgb(128, 29, 96);
     align-items: center;
     padding: 18px;
     gap: 40%;
@@ -50,12 +48,11 @@ nav li{
 .section1{
     text-align: center;
     padding: 50px;
-      background-color: rgb(240, 233, 238);
+    background-color: rgb(240, 233, 238);
  
 }
 .section1:hover{
     transition-property: background-color;
-  
      background-color:rgb(234, 216, 230);
 }
 .section1 h2 {
@@ -68,8 +65,6 @@ nav li{
     color: rgb(75, 16, 62);
     transform: scale(1.1);
 }
-
-
 
 .button {
     padding: 13px;
@@ -93,7 +88,7 @@ nav li{
 }
 .section2{
     text-align: center;
-      padding: 25px;
+    padding: 25px;
   
   
 }
@@ -113,7 +108,6 @@ nav li{
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     width: 150px;
     height: 60px;
-
     transition: background-color 0.5s ease,
                 transform 0.3s ease,
                 box-shadow 0.3s ease;
@@ -146,7 +140,6 @@ nav li{
 
 
 .footer:hover div {
- 
     transform: scale(1.05);
 }
 
