@@ -4,10 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script> -->
 </head>
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .full-id{
+        text-align: center;
+        border: 2px solid black;
+        margin: auto;
+        padding: 20px;
+        width: 320px;
+       background: linear-gradient(
+    to bottom right,
+      rgb(114, 206, 236),
+  
+    rgb(222, 235, 241));
+    }
+    
+    .mid-cont {
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "year img dob"
+        "year img dob";
+        /* border: 1px solid black; */
+        padding-top: 15px;
+        font-weight: bold;
+    }
+ 
+.header h1{
+    color: rgb(44, 173, 216);
+    background-color:white;
+  
+    box-shadow: 1px 2px 1px gray;
+}
+    .year{
+        grid-area: year;
+          padding-top: 40px;
+
+    }
+
+     .dob{
+        grid-area: dob;
+        padding-top: 40px;
+    }
+   
+
+    img{
+        border: 1px solid black;
+    }
+    
+    .last-cont{
+        font-weight: bold;
+    }
+    .EID{
+        background-color: white;
+        padding:10px ;
+        box-shadow: 1px 2px 1px gray;
+    }
+    .contact{
+        color: gray;
+    }
+</style>
 <body>
-    <div class="card bg-white " style="width: 18rem";></div>
+
+   <div class="full-id">
+
+         <header class="header">
+           <h1>SLA INSTITUTE <br> <span style="color: black; font-size: 18px;" >KK nagar,Chennai.</span></h1>
+      
+        </header>
+
+         <section class="mid-cont">
+            <div class="year"> <p class="a">Year</p>
+            <p  class="b">2026</p></div>
+           
+          <img src="data:image/png;base64,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" alt="sla" width="150px" height="180px">
+           
+          <div class="dob">
+             <p class="c">DOB</p>
+            <p  class="d">01/01/2004</p>
+          </div>
+         
+         </section>
+
+         <section class="last-cont">
+              
+             <p class="EID">EID_26_007491</p>
+              <p>DEEPA V</p>
+                <p>FULL STACK DEVELOPMENT</p>
+           
+             <p class="contact">8608612728</p>
+         
+           
+           
+         </section>
+
+   </div>
+
 </body>
 </html>
